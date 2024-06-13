@@ -1,7 +1,7 @@
-const mongoose=require('mongoose');
+const mongoose=require ('mongoose');
 
 //Define MongoDB connection URL 
-const mongoURL=process.env.MONGODB_URL_LOCAL //uh can change the myselfdb according to the requirement
+const mongoURL="mongodb://127.0.0.1:27017/myselfdb" //uh can change the myselfdb according to the requirement
 
 //set up MongoDB connection
 mongoose.connect(mongoURL,{
